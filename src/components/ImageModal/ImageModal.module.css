@@ -1,35 +1,29 @@
-/* 1) Оверлей (темний фон) на весь екран */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Темний фон */
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 2) Контейнер модалки (не розтягуємо на 100%),
-      щоб лишився "вільний" простір для кліку */
 .modal {
   position: relative;
-  background: transparent; /* Або #fff, якщо потрібна біла панель */
+  background: transparent;
   border: none;
   outline: none;
 
-  /* Прибираємо ширину/висоту, щоб блок "автоматично" підлаштовувався
-     під розмір зображення */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 3) Зображення масштабується і завжди вміщується на екрані */
 .image {
-  max-width: 90vw; /* Не більше 90% ширини вікна */
-  max-height: 90vh; /* Не більше 90% висоти вікна */
-  object-fit: contain; /* Зберігає пропорції, не обрізає */
-  border-radius: 4px; /* Невелике заокруглення кутів (необов’язково) */
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
 }
